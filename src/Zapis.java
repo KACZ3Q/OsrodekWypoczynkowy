@@ -70,6 +70,7 @@ public class Zapis extends Polaczenie{
         login1=wczytaj.nextLine();
         System.out.println("Haslo (max 4 znaki): ");
         haslo1=wczytaj.nextLine();
+        //Test commita
         if (imie.length() > 0 && nazwisko.length() > 0 && dataur.matches("\\d{4}-\\d{2}-\\d{2}")&& datazat.matches("\\d{4}-\\d{2}-\\d{2}") && email.contains("@")
                 && numertel.matches("\\d{9}") && idstanowiska.length()>0&& idmiejscapracy.length()>0 && wynagordzenie.matches("\\d+(\\.\\d{2})?") && login1.length() > 0 && haslo1.length() <= 4)
         {

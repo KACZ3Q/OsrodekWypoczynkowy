@@ -14,6 +14,7 @@ public class Aktualizacja extends Polaczenie{
         email=wczytaj.nextLine();
         System.out.println("Podaj nowy numer telefonu (9 cyfr): ");
         numer=wczytaj.nextLine();
+        //Test commita
         if (id.matches("\\d+") && email.contains("@") && numer.matches("\\d{9}"))
         {
             String sql = "UPDATE klienci SET email='" + email + "',Numer_tel='" + numer + "'WHERE ID_Klienta='" + id + "'";
