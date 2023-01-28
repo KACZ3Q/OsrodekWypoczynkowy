@@ -10,7 +10,6 @@ public class Usun extends Polaczenie{
     public static void Klient(){
         System.out.println("Podaj id klienta ktorego chcesz usunac: ");
         id=wczytaj.nextLine();
-        //Test commita
         if (id.matches("\\d+")) {
             String sql = "DELETE FROM klienci WHERE ID_klienta=" + id;
 

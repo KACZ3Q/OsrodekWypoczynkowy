@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f848309f-d883-4dd9-b021-6d5cfa8fd86c" name="Changes" comment="Walidacja danych" />
+    <list default="true" id="f848309f-d883-4dd9-b021-6d5cfa8fd86c" name="Changes" comment="Walidacja danych">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OsrodekWypoczynkowy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OsrodekWypoczynkowy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aktualizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aktualizacja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zapis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zapis.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,12 +42,56 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "last_opened_file_path": "D:/Projekty/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PolaczenieTest">
+    <configuration name="PolaczenieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OsrodekWypoczynkowy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testy" />
+      <option name="MAIN_CLASS_NAME" value="Testy.PolaczenieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolaczenieTest.testGetPolacz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OsrodekWypoczynkowy" />
+      <option name="PACKAGE_NAME" value="Testy" />
+      <option name="MAIN_CLASS_NAME" value="Testy.PolaczenieTest" />
+      <option name="METHOD_NAME" value="testGetPolacz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PolaczenieTest" />
+        <item itemvalue="JUnit.PolaczenieTest.testGetPolacz" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674910573014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Walidacja danych">
+      <created>1674910721201</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674910721201</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
