@@ -14,49 +14,54 @@ public class Aktualizacja extends Polaczenie{
         email=wczytaj.nextLine();
         System.out.println("Podaj nowy numer telefonu (9 cyfr): ");
         numer=wczytaj.nextLine();
+        if (id.matches("\\d+") && email.contains("@") && numer.matches("\\d{9}"))
+        {
+            String sql = "UPDATE klienci SET email='" + email + "',Numer_tel='" + numer + "'WHERE ID_Klienta='" + id + "'";
 
-            String sql="UPDATE klienci SET email='"+email+"',Numer_tel='"+numer+"'WHERE ID_Klienta='"+id+"'";
+            try {
+                PreparedStatement statement = polacz.prepareStatement(sql);
+                int row = statement.executeUpdate(sql);
+                if (row > 0) System.out.println("Dane pomyslnie zaktualizowane");
+                else {
+                    System.out.println("Wpisano niepoprawne dane ");
+                    Menu.MenuPowrotAktualizacjaKlienta();
+                }
 
-        try {
-            PreparedStatement statement=polacz.prepareStatement(sql);
-            int row = statement.executeUpdate(sql);
-            if (row>0 ) System.out.println("Dane pomyslnie zaktualizowane");
-            else
-            {
-                System.out.println("Wpisano niepoprawne dane ");
-                Menu.MenuPowrotAktualizacjaKlienta();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
-
         }
-        catch (SQLException e){
-            throw new RuntimeException(e);
+        else {
+            System.out.println("Wpisano niepoprawne dane ");
+            Menu.MenuPowrotAktualizacjaKlienta();
         }
-
     }
     public static void Pracownik(){
         System.out.println("Podaj id pracownika ktorego dane chcesz zaaktualizowac: ");
         id=wczytaj.nextLine();
-
         System.out.println("Podaj nowy email: ");
         email=wczytaj.nextLine();
         System.out.println("Podaj nowy numer telefonu (9 cyfr): ");
         numer=wczytaj.nextLine();
+        if (id.matches("\\d+") && email.contains("@") && numer.matches("\\d{9}")) {
+            String sql = "UPDATE pracownicy SET email='" + email + "',Numer_tel='" + numer + "'WHERE ID_Pracownika='" + id + "'";
 
-        String sql="UPDATE pracownicy SET email='"+email+"',Numer_tel='"+numer+"'WHERE ID_Pracownika='"+id+"'";
+            try {
+                PreparedStatement statement = polacz.prepareStatement(sql);
+                int row = statement.executeUpdate(sql);
+                if (row > 0) System.out.println("Dane pomyslnie zaktualizowane");
+                else {
+                    System.out.println("Wpisano niepoprawne dane ");
+                    Menu.MenuPowrotAktualizacjaPracownika();
+                }
 
-        try {
-            PreparedStatement statement=polacz.prepareStatement(sql);
-            int row = statement.executeUpdate(sql);
-            if (row>0) System.out.println("Dane pomyslnie zaktualizowane");
-            else
-            {
-                System.out.println("Wpisano niepoprawne dane ");
-                Menu.MenuPowrotAktualizacjaPracownika();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
-
         }
-        catch (SQLException e){
-            throw new RuntimeException(e);
+        else {
+            System.out.println("Wpisano niepoprawne dane ");
+            Menu.MenuPowrotAktualizacjaPracownika();
         }
     }
     public static void Rezerwacja(){
@@ -70,22 +75,25 @@ public class Aktualizacja extends Polaczenie{
         iloscGodzin=wczytaj.nextLine();
         System.out.println("Podaj nowa cene rezerwacji: ");
         cena=wczytaj.nextLine();
+        if (id.matches("\\d+") && data.matches("\\d{4}-\\d{2}-\\d{2}") && godzina.matches("\\d{2}:\\d{2}:\\d{2}") && iloscGodzin.matches("\\d+") && cena.matches("\\d+(\\.\\d{2})?")) {
+            String sql = "UPDATE rezerwacje SET Data='" + data + "',Godzina='" + godzina + "',Ilosc_godzin='" + iloscGodzin + "',Cena_rezerwacji='" + cena + "'WHERE ID_rezerwacji='" + id + "'";
 
-        String sql="UPDATE rezerwacje SET Data='"+data+"',Godzina='"+godzina+"',Ilosc_godzin='"+iloscGodzin+"',Cena_rezerwacji='"+cena+"'WHERE ID_rezerwacji='"+id+"'";
+            try {
+                PreparedStatement statement = polacz.prepareStatement(sql);
+                int row = statement.executeUpdate(sql);
+                if (row > 0) System.out.println("Dane pomyslnie zaktualizowane");
+                else {
+                    System.out.println("Wpisano niepoprawne dane ");
+                    Menu.MenuPowrotAktualizacjaRezerwacji();
+                }
 
-        try {
-            PreparedStatement statement=polacz.prepareStatement(sql);
-            int row = statement.executeUpdate(sql);
-            if (row>0 ) System.out.println("Dane pomyslnie zaktualizowane");
-            else
-            {
-                System.out.println("Wpisano niepoprawne dane ");
-                Menu.MenuPowrotAktualizacjaRezerwacji();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
-
         }
-        catch (SQLException e){
-            throw new RuntimeException(e);
+        else {
+            System.out.println("Wpisano niepoprawne dane ");
+            Menu.MenuPowrotAktualizacjaRezerwacji();
         }
     }
 }
