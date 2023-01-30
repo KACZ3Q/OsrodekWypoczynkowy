@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f848309f-d883-4dd9-b021-6d5cfa8fd86c" name="Changes" comment="Walidacja danych">
+    <list default="true" id="f848309f-d883-4dd9-b021-6d5cfa8fd86c" name="Changes" comment="Testy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OsrodekWypoczynkowy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OsrodekWypoczynkowy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aktualizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aktualizacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zapis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zapis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolaczenieTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="OsrodekWypoczynkowy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PolaczenieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OsrodekWypoczynkowy" />
       <extension name="coverage">
@@ -87,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PolaczenieTest" />
         <item itemvalue="JUnit.PolaczenieTest.testGetPolacz" />
       </list>
@@ -122,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674910721201</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Testy">
+      <created>1674912181853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674912181853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CRUD i menu dla calej aplikacji" />
     <MESSAGE value="Walidacja danych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Walidacja danych" />
+    <MESSAGE value="Testy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testy" />
   </component>
 </project>

@@ -69,9 +69,8 @@ public class Odczyt extends Polaczenie{
                                     +" "+wynik.getString(3) +" Data urodzenia: "+wynik.getString(4)
                                     +" Data zatrundienia: "+wynik.getString(5) +" Email: "+wynik.getString(6)
                                     +" Numer telefonu: "+wynik.getString(7)+" ID stanowiska: "+wynik.getString(8)
-                                    +"ID miejsca pracy: "+wynik.getString(9)+" Wynagrodzenie: "+wynik.getString(10));
+                                    +" ID miejsca pracy: "+wynik.getString(9)+" Wynagrodzenie: "+wynik.getString(10));
                 }
-                //polacz.close();
 
             } catch (SQLException e) {
                 throw new RuntimeException(e);
